@@ -1,0 +1,8 @@
+turtle
+mouse
+cat
+dog
+lion
+fish
+charizard
+whale

@@ -1,7 +1,5 @@
 ﻿  WordsDatabase.cpp
-c:\users\olen\documents\visual studio 2012\projects\tcsu\tcsu\wordsdatabase.cpp(1): fatal error C1083: Cannot open include file: 'WordsDatabase.h': No such file or directory
   Main.cpp
-c:\users\olen\documents\visual studio 2012\projects\tcsu\tcsu\main.cpp(5): fatal error C1083: Cannot open include file: 'WordsDatabase.h': No such file or directory
   Enums.cpp
-c1xx : fatal error C1083: Cannot open source file: 'Enums.cpp': No such file or directory
   Generating Code...
+  TCSU.vcxproj -> C:\Users\Olen\documents\visual studio 2012\Projects\TCSU\Debug\TCSU.exe

@@ -90,6 +90,10 @@
     <ClInclude Include="Enums.h" />
     <ClInclude Include="WordsDatabase.h" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="Assets\Easy.txt" />
+    <Text Include="Assets\EasyBosses.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
