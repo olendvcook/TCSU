@@ -82,11 +82,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="Enums.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="WordsDatabase.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Enemy.h" />
     <ClInclude Include="Enums.h" />
     <ClInclude Include="WordsDatabase.h" />
   </ItemGroup>

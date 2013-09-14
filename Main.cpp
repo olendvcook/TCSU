@@ -10,8 +10,6 @@
 const int TICKS_PER_SECOND = 60;
 const int SKIP_TICKS = 1000 / TICKS_PER_SECOND;
 const int MAX_FRAMESKIP = 5;
-const int WIDTH = 640;
-const int HEIGHT = 480;
 
 //int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
 int main()
@@ -29,7 +27,6 @@ int main()
     {
 		window.clear();
 
-		//std::cout << wd.GetBoss(1) + "\n";
 		loops = 0;
 
 		//input here
@@ -43,7 +40,7 @@ int main()
         //controls update speed
 		while (clock.getElapsedTime().asMilliseconds() > nextGameTick && loops < MAX_FRAMESKIP)
 		{
-
+			std::cout << wd.GetBoss() + "\n";
 			//updates here
 
 			nextGameTick += SKIP_TICKS;
