@@ -39,6 +39,25 @@ void WordsDatabase::InitWords(std::string pFileName)
 
 }
 
+void WordsDatabase::InitPhrases(std::string pFileName)
+{
+	std::ifstream inf(pFileName);
+	std::string tmp = "";
+
+	if(!inf)
+	{
+		std::cerr << "File Read Error";
+		exit(EXIT_FAILURE);
+	}
+
+	while(inf)
+	{
+		std::getline(inf, tmp, '#');
+		mPhrases.insert(mPhrases.end(), tmp);
+	}
+	
+}
+
 void WordsDatabase::InitBosses(std::string pFileName)
 {
 	std::ifstream inf(pFileName);
@@ -66,4 +85,9 @@ std::string WordsDatabase::GetWord()
 std::string WordsDatabase::GetBoss()
 {
 	return mBosses[RandomInt(0,mBosses.size()-1)];
+}
+
+std::string WordsDatabase::GetPhrase()
+{
+	return mPhrases[RandomInt(0,mPhrases.size()-1)];
 }

@@ -3,6 +3,7 @@
 #include <Windows.h>
 #include <iostream>
 #include "WordsDatabase.h"
+#include "Game.h"
 //Constant Game Speed indepenent of Variable FPS Game Loop implementation
 //USING: http://www.koonsolo.com/news/dewitters-gameloop/
 
@@ -21,8 +22,9 @@ int main()
 	float interpolation;
 	//--------------------------------------------
 	WordsDatabase wd(eEASY);
-    sf::RenderWindow window(sf::VideoMode(WIDTH, HEIGHT), "TCSU!");
+	Game mGame();
 	std::cout << wd.GetBoss();
+	sf::RenderWindow window(sf::VideoMode(WIDTH, HEIGHT), "TCSU!");
     while (window.isOpen())
     {
 		window.clear();
@@ -35,12 +37,18 @@ int main()
         {
             if (event.type == sf::Event::Closed)
                 window.close();
+
+			if (event.type == sf::Event::TextEntered)
+			{
+				if (event.text.unicode < 128)
+					std::cout << static_cast<char>(event.text.unicode);
+			}
         }
 
         //controls update speed
 		while (clock.getElapsedTime().asMilliseconds() > nextGameTick && loops < MAX_FRAMESKIP)
 		{
-			std::cout << wd.GetBoss() + "\n";
+			//std::cout << wd.GetBoss() + "\n";
 			//updates here
 
 			nextGameTick += SKIP_TICKS;

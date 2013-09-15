@@ -84,17 +84,30 @@
   <ItemGroup>
     <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="Enums.cpp" />
+    <ClCompile Include="Game.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="View.cpp" />
     <ClCompile Include="WordsDatabase.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Enemy.h" />
     <ClInclude Include="Enums.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="View.h" />
     <ClInclude Include="WordsDatabase.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="Assets\Easy.txt" />
     <Text Include="Assets\EasyBosses.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="Assets\font.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\test.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
